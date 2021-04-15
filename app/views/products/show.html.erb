@@ -1,0 +1,14 @@
+<h1>Products#show</h1>
+<p>Finds me in app/views/products/show.html.erb</p>
+
+<table border="1">
+    <% for @product in @products %>
+        <tr>  
+         <td> <%= @product.id%> </td>
+         <td> <%= @product.name %></td>
+         <td> <%= @product.price %> Euro</td>
+         <td> <%= link_to "Details", products_show_detail_path({:id=>@product.id}) %></td>
+         <td> <%= link_to "Delete", products_delete_path({:id=>@product.id}) %></td>
+        </tr>
+    <% end %>
+</table>

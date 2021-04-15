@@ -30,3 +30,11 @@ yarn install
 Start
 
 rails server
+
+Routes
+
+   'products/show'
+   'products/show_detail'
+   'products/add'
+   'products/modify'
+   'products/delete'
